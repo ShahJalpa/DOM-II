@@ -28,11 +28,25 @@ navLink.forEach(item => {
 
  /*EVENT 4 (select)
  selecting words with select event*/
-let selection = document.querySelector('.container')
+/*let selection = document.querySelector('.container');
 selection.addEventListener('select', (event)=>{
-    const words = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd)
+    const words = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
     console.log(selection.textContent = `selected words are:  ${words}`);
+})*/
+
+/*EVENT 5 (focus)*/
+const button = document.querySelectorAll('.btn');
+// /*button.forEach(item => {
+//     item.addEventListener('focus', (event) =>{
+//         event.target.style.background = 'green';
+//     }) 
+
+// })*/
+button.addEventListener('focus', (event) => {
+    event.target.style.color = 'green';
 })
+
+
 
 
  

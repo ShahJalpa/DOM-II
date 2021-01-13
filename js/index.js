@@ -36,15 +36,17 @@ selection.addEventListener('select', (event)=>{
 
 /*EVENT 5 (focus)*/
 const button = document.querySelectorAll('.btn');
-// /*button.forEach(item => {
-//     item.addEventListener('focus', (event) =>{
-//         event.target.style.background = 'green';
-//     }) 
+button.forEach(item => {
+    item.addEventListener('click', (event) =>{
+        //event.target.style.background = 'green';
+        alert('Element clicked throuth the function');
+    }) 
 
 // })*/
-button.addEventListener('focus', (event) => {
-    event.target.style.color = 'green';
-})
+// button.addEventListener('click', (event) => {
+//     //event.target.style.color = 'green';
+//     alert('Element clicked throuth the function');
+// })
 
 
 

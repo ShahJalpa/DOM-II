@@ -26,6 +26,26 @@ navLink.forEach(item => {
      })
  })
 
+ /*EVENT 4 (click)*/
+const button = document.querySelectorAll('.btn');
+button.addEventListener('click', (event) => {
+    alert('Element clicked throuth the function');
+    //event.target.style.color = 'green';
+})
+
+
+/* Event 4 (click)
+const button = document.querySelectorAll('.btn');
+button.forEach(item => {
+    item.addEventListener('click', (event) =>{
+        //event.target.style.background = 'green';
+        alert('Element clicked throuth the function');
+    })*/
+
+// })*/
+
+
+
  /*EVENT 4 (select)
  selecting words with select event*/
 /*let selection = document.querySelector('.container');
@@ -34,19 +54,7 @@ selection.addEventListener('select', (event)=>{
     console.log(selection.textContent = `selected words are:  ${words}`);
 })*/
 
-/*EVENT 5 (focus)*/
-const button = document.querySelectorAll('.btn');
-button.forEach(item => {
-    item.addEventListener('click', (event) =>{
-        //event.target.style.background = 'green';
-        alert('Element clicked throuth the function');
-    }) 
 
-// })*/
-// button.addEventListener('click', (event) => {
-//     //event.target.style.color = 'green';
-//     alert('Element clicked throuth the function');
-// })
 
 
 

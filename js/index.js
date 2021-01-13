@@ -11,15 +11,15 @@ navLink.forEach(item => {
 
  navLink.forEach(item => {
      item.addEventListener('mouseout', () => {
-         item.style.color = 'black';
+         item.style.color = 'blue';
      })
  })
 
  //make event little larger when mouse clicked twice in a short span of time
- let img = document.querySelectorAll('.img-content');
- img.forEach(item => {
+ let imgs = document.querySelectorAll('img');
+ imgs.forEach(item => {
      item.addEventListener('dblclick', () =>{
-         item.classList.toggle('large');
+         item.style.scale = '1.2';     
      })
  })
 

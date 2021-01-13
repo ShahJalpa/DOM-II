@@ -27,11 +27,13 @@ navLink.forEach(item => {
  })
 
  /*EVENT 4 (click)*/
-const button = document.querySelectorAll('.btn');
-button.addEventListener('click', (event) => {
+const footer = document.querySelector('.footer');
+footer.addEventListener('click', () => {
     alert('Element clicked throuth the function');
     //event.target.style.color = 'green';
 })
+
+
 
 
 /* Event 4 (click)
